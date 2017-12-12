@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>TRYSTERO DELIVERY COMPANY - Home </title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+  	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	<div id="pagewrap">
+
+	<header>
+		<h1> TRYSTERO DELIVERY COMPANY</h1>
+
+	</header>
+		  <div class="topnav" id="myTopnav">
+		  	
+  <a href="../index.html" >Home</a>
+  <a href="../shipping/shipping.html" >Shipping</a>
+  <a href="../pickup/pickup.html">Pickup & Returns</a>
+  <a href="help.html" class="active">Help</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  
+</div>
+<img src="../img/help.jpg" id="Picture of Customer service Rep">
+	
+	
+	<section id="middle">
+		<h2>Help Centre</h2>
+		<p> Please see our frequently asked questions below
+			</p>
+<button class="accordion">F.A.Q.</button>
+<div class="panel"> <br/><br/>
+  
+  	 <b>Q: What are your opening times? </b><br/><br/>
+  	<b>A: </b> 9AM - 6PM Monday to Saturday.
+  <br/><br/>
+
+  	 <b>Q: When will my parcel arrive? </b><br/><br/>
+  	<b>A: </b> If you have your TDC Tracking ID/Number, click the Track & Trace button to the right. You'll find out whether your parcel is due for delivery today. We normally deliver between 8a.m. - 6p.m. <br/><br/>
+
+  	<b>Q:  I'd like to change my delivery schedule </b><br/><br/>
+  	<b>A: </b> If you’ve received a text or email from us, just click on the Manage Delivery link included in your text or email and let us know through our help form. You can change your delivery date, opt to collect at your local TDC Depot and if the shipper has authorised, your parcel can be delivered to a neighbour.
+  <br/><br/>
+
+   <b>Q: Do you deliver on Saturdays?</b><br/><br/>
+  	<b>A: </b> We deliver parcels on Saturdays. It is key that you specify that these are to be delivered on Saturday when you request your collection, and use Saturday delivery labels also.<br/><br/>
+
+  	<b>Q:  Are my parcels insured? </b><br/><br/>
+  	<b>A: </b> TDC provides standard liability insurance for all parcels sent. Please contact us for more information. <br/><br/>
+
+  	<b>Q:  Are there any goods I cannot send? </b><br/><br/>
+  		<b>A: </b> We will always do our best to accommodate your needs. However, for Health & Safety reasons there are some products we cannot carry. They include: Dangerous Goods, Hazardous Goods, Flammable Products, Animals, Perishable Food, Cash, jewellery, precious metals or antiques, liquids. <br/><br/>
+
+
+</ul>
+</div>
+
+
+<button class="accordion">Contact</button>
+<div class="panel">
+  <p>You can contact us by <br/><br/><i class="fa fa-phone"></i> <b>Calling us</b> on 1890 391 725 <br/> <br/><i class="fa fa-envelope"></i> <b>Emailing us</b> at support@trysterodc.com<br/> Or by filling out our form bellow. <br/><br/>For emails and forms please allow 24 hours for a response,<br/> we'll try our best to contact you before then!</p>
+  <div id="contact-form">
+	<div>
+		<h4>Have a question or just want to get in touch? Let's chat.</h4> 
+	</div>
+		<p id="failure">Oopsie...message not sent.</p>  
+		<p id="success">Your message was sent successfully. Thank you!</p>
+
+		   <form method="post" action="/">
+			<div>
+		      <label for="name">
+		      	<span class="required">Name: *</span> 
+		      	<input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+		      </label> 
+			</div>
+			<div>
+		      <label for="email">
+		      	<span class="required">Email: *</span>
+		      	<input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+		      </label>  
+			</div>
+			<div>		          
+		      <label for="subject">
+		      <span style="color: #040F31;">Subject: </span>
+			      <select id="subject" name="subject" tabindex="4">   
+			         <option value="hello">Parcel Tracking</option>
+			         <option value="quote">Labels For Returns</option>  
+			         <option value="general">Other </option>
+			      </select>
+		      </label>
+			</div>
+			<div>		          
+		      <label for="message">
+		      	<span class="required">Message: *</span> 
+		      	<textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+		      </label>  
+			</div>
+			<div>		           
+		      <button name="submit" type="submit" id="submit" >SEND</button> 
+			</div>
+		   </form>
+
+	</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+	</section>
+
+	<section id="content3">
+		<h2>Track & Trace</h2>
+		<p> Here’s the fastest way to check the status of your shipment. No need to call Customer Service – our online results give you real-time, detailed progress as your shipment speeds through the TDC network.<br/>
+			</p>
+	<form>
+  <input type="text" name="search" placeholder="Enter Tracking ID Here">
+  <button>Track</button>
+</form>
+<p>Need help? <a href="#help">Click here</a> </p>
+	</section>
+	
+	
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3><span><img src="../img/logo3.gif"></span></h3>
+
+				<p class="footer-links">
+					<a href="../index.html" >Home /</a>
+          <a href="../shipping/shipping.html" >Shipping /</a>
+          <a href="../pickup/pickup.html">Pickup & Returns /</a>
+          <a href="help.html">Help</a>
+				</p>
+
+				<p class="footer-company-name">TRYSTERO DELIVERY COMPANY &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>21 Dawn Street, Cork</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>Call us: 1890 391 725</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@trysterodc.com">support@trysterodc.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span >About the company</span>
+					We set the standards others try to live up to. Parcel service quality is our top priority – over 40,000 customers rely on us.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+</div>
